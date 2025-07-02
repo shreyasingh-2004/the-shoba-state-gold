@@ -9,8 +9,8 @@ export default function home() {
     <>
     <VideoHero/>
     <AboutUs/>
-    <DiningCards/>
     <RoomGallery/>
+    <DiningCards/>
     </>
   )
 }

@@ -1,34 +1,31 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import img1 from '../../assets/img/dining/aero-stag.JPG';
-import img2 from '../../assets/img/dining/dine-1.jpg';
-import img3 from '../../assets/img/dining/udaan.jpg';
-import img4 from '../../assets/img/dining/zaika.jpg';
+import { diningImages } from '../../Data'; 
 
 const dine = [
   {
     name: "AERO-STAG",
     type: "Aero Stag offers a unique dining experience with both elegant indoor seating and breezy poolside ambiance.",
-    image: img1,
-    link: "/aero-stag-booking"
+    link: "/aero-stag-booking",
+    imageKey: "aerostag" // Match the key from diningImages
   },
   {
     name: "SAFAR",
     type: "A Safar is our signature indoor restaurant serving a delightful blend of traditional and modern cuisine.",
-    image: img2,
-    link: "/safar-booking"
+    link: "/safar-booking",
+    imageKey: "safar"
   },
   {
     name: "UDAAN",
     type: "Just like flights soaring high, Udaan lifts your dining experience with delicious food and a welcoming ambiance.",
-    image: img3,
-    link: "/udaan-booking"
+    link: "/udaan-booking",
+    imageKey: "udaan"
   },
   {
     name: "ZAIKA",
     type: "Our skilled chefs craft each dish using time-honoured recipes and authentic spices, delivering a true culinary experience.",
-    image: img4,
-    link: "/zaika-booking"
+    link: "/zaika-booking",
+    imageKey: "zaika"
   }
 ];
 
@@ -41,25 +38,30 @@ const DiningCards = () => {
       </div>
 
       <div className="arch-card-container">
-        {dine.map((dine, index) => (
-          <div className="arch-card" key={index}>
-            <div className="arch-image-wrapper">
-              <img 
-                src={dine.image} 
-                alt={dine.name} 
-                loading="lazy"
-                onError={(e) => {
-                  e.target.src = '/assets/img/dine/default.jpg';
-                }} 
-              />
+        {dine.map((restaurant, index) => {
+          // Get the image from diningImages using the imageKey
+          const imageSrc = diningImages[restaurant.imageKey]?.main;
+          
+          return (
+            <div className="arch-card" key={index}>
+              <div className="arch-image-wrapper">
+                <img 
+                  src={imageSrc} 
+                  alt={restaurant.name} 
+                  loading="lazy"
+                  onError={(e) => {
+                    e.target.src = '/assets/img/dine/default.jpg';
+                  }} 
+                />
+              </div>
+              <div className="arch-card-info glass">
+                <h3>{restaurant.name}</h3>
+                <p>{restaurant.type}</p>
+                <Link to={restaurant.link} className="arch-book-button">RESERVE TABLE</Link>
+              </div>
             </div>
-            <div className="arch-card-info glass">
-              <h3>{dine.name}</h3>
-              <p>{dine.type}</p>
-              <Link to={dine.link} className="arch-book-button">RESERVE TABLE</Link>
-            </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </section>
   );

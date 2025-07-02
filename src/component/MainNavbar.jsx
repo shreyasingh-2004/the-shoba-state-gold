@@ -26,7 +26,7 @@ const MainNavbar = () => {
     { id: 'gallery', label: 'Gallery', path: '/gallery' },
     { id: 'room', label: 'Rooms', path: '/room' },
     { id: 'dining', label: 'Dining', path: '/dining' },
-    { id: 'experience', label: 'Experiences', path: '/experience' },
+    { id: 'corportae', label: 'Corporate', path: '/corporate'},
     { id: 'contact', label: 'Contact Us', path: '/contact' },
   ];
 
@@ -44,7 +44,7 @@ const MainNavbar = () => {
 
           <Button
             as={Link}
-            to="/booking"
+            to="/room"
             className="book-now-btn-mobile d-lg-none me-2"
             variant="primary"
           >
@@ -80,7 +80,7 @@ const MainNavbar = () => {
               ))}
               <Button
                 as={Link}
-                to="/booking"
+                to="/room"
                 className="book-now-btn ms-lg-3 mt-3 mt-lg-0"
                 variant="primary"
               >
@@ -93,7 +93,7 @@ const MainNavbar = () => {
 
       {/* Mobile Dropdown Menu */}
       <div className={`mobile-slide-down-menu ${expanded ? 'open' : ''}`}>
-        <Nav className="flex-column p-3">
+        <Nav className="flex-column p-4">
           {navItems.map((item) => (
             <Nav.Link
               key={item.id}

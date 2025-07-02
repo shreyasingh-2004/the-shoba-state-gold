@@ -1,51 +1,46 @@
 import React, { useState, useEffect, useRef } from 'react';
-import img1 from '../../assets/img/rooms/classic.jpg';
-import img2 from '../../assets/img/rooms/executive.jpg';
-import img3 from '../../assets/img/rooms/deluxe.jpg';
-import img4 from '../../assets/img/rooms/super-deluxe.jpg';
-import img5 from '../../assets/img/rooms/suite.jpg';
-import img6 from '../../assets/img/rooms/family-suite.jpg';
-
-const images = [
-    {
-        src: img1,
-        title: 'Classic Room',
-        caption: 'The Classic Room offers comfort modern amenities and thoughtful essentials throughout your stay.',
-    },
-    {
-        src: img2,
-        title: 'Executive Room',
-        caption: 'Experience the Elegance of Space, Style, and Serenity – All in One Executive Retreat.',
-    },
-    {
-        src: img3,
-        title: 'Deluxe Room',
-        caption: 'Experience the Elegance of Space, Style, and Serenity – All in One Deluxe Retreat.',
-    },
-    {
-        src: img4,
-        title: 'Super Deluxe Room',
-        caption: 'More Than Just a Room A Bespoke Experience of Rest, Elegance, and Impeccable Service.',
-    },
-    {
-        src: img5,
-        title: 'Suite Room',
-        caption: 'A Suite That Redefines Living Thoughtfully Designed for Moments That Matter.',
-    },
-    {
-        src: img6,
-        title: 'Family Suite Room',
-        caption: 'The Family Suite — Generously Appointed for Comfort, Connection, and Convenience.',
-    },
-];
+import { allImages } from '../../Data'; // Import the image data
 
 const RoomGallery = () => {
-
     const [activeIndex, setActiveIndex] = useState(null);
     const [isMobile, setIsMobile] = useState(false);
     const [isTablet, setIsTablet] = useState(false);
     const [currentSlide, setCurrentSlide] = useState(0);
     const galleryRef = useRef(null);
+
+    // Create images array from the imported data
+    const images = [
+        {
+            src: allImages.rooms.classic.bg,
+            title: 'Classic Room',
+            caption: 'The Classic Room offers comfort modern amenities and thoughtful essentials throughout your stay.',
+        },
+        {
+            src: allImages.rooms.executive.bg,
+            title: 'Executive Room',
+            caption: 'Experience the Elegance of Space, Style, and Serenity – All in One Executive Retreat.',
+        },
+        {
+            src: allImages.rooms.deluxe.bg,
+            title: 'Deluxe Room',
+            caption: 'Experience the Elegance of Space, Style, and Serenity – All in One Deluxe Retreat.',
+        },
+        {
+            src: allImages.rooms.superDeluxe.bg,
+            title: 'Super Deluxe Room',
+            caption: 'More Than Just a Room A Bespoke Experience of Rest, Elegance, and Impeccable Service.',
+        },
+        {
+            src: allImages.rooms.suite.bg,
+            title: 'Suite Room',
+            caption: 'A Suite That Redefines Living Thoughtfully Designed for Moments That Matter.',
+        },
+        {
+            src: allImages.rooms.familySuite.bg,
+            title: 'Family Suite Room',
+            caption: 'The Family Suite — Generously Appointed for Comfort, Connection, and Convenience.',
+        },
+    ];
 
     useEffect(() => {
         const checkDevice = () => {
@@ -107,7 +102,7 @@ const RoomGallery = () => {
             <section className="gallery-container">
                 <div className="title">
                     <h2>OUR ROOMS AND DINE</h2>
-                    <p >Experience our exquisite rooms and suites</p>
+                    <p>Experience our exquisite rooms and suites</p>
                 </div>
                 <div className="gallery-slider">
                     <div
@@ -140,35 +135,35 @@ const RoomGallery = () => {
                         ))}
                     </div>
                 </div>
-                </section>
-                );
+            </section>
+        );
     }
 
-                return (
-                <section className="gallery-container">
-                    <div className="title">
-                        <h2>OUR ROOMS AND DINE</h2>
-                        <p >Experience our exquisite rooms and suites</p>
+    return (
+        <section className="gallery-container">
+            <div className="title">
+                <h2>OUR ROOMS</h2>
+                <p>Experience our exquisite rooms and suites</p>
+            </div>
+            <div className="gallery-horizontal">
+                {images.map((item, index) => (
+                    <div
+                        key={index}
+                        className={`gallery-item ${activeIndex === index ? 'expanded' : ''}`}
+                        onMouseEnter={() => !isTablet && setActiveIndex(index)}
+                        onMouseLeave={() => !isTablet && setActiveIndex(null)}
+                        onClick={() => handleItemClick(index)}
+                        style={{ backgroundImage: `url(${item.src})` }}
+                    >
+                        <div className="item-overlay">
+                            <h3>{item.title}</h3>
+                            <p>{item.caption}</p>
+                        </div>
                     </div>
-                    <div className="gallery-horizontal">
-                        {images.map((item, index) => (
-                            <div
-                                key={index}
-                                className={`gallery-item ${activeIndex === index ? 'expanded' : ''}`}
-                                onMouseEnter={() => !isTablet && setActiveIndex(index)}
-                                onMouseLeave={() => !isTablet && setActiveIndex(null)}
-                                onClick={() => handleItemClick(index)}
-                                style={{ backgroundImage: `url(${item.src})` }}
-                            >
-                                <div className="item-overlay">
-                                    <h3>{item.title}</h3>
-                                    <p>{item.caption}</p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </section>
-                );
+                ))}
+            </div>
+        </section>
+    );
 };
 
-                export default RoomGallery;
+export default RoomGallery;
