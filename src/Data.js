@@ -1,3 +1,7 @@
+// Extra images
+import hotelImg1 from './assets/img/gallery/hotel-img.jpg';
+import hotelImg2 from './assets/img/gallery/Hotel-image.jpg';
+
 // Rooms Images
 import classicbg from './assets/img/rooms/classic.jpg';
 import classic1 from './assets/img/rooms/classic1.JPG';
@@ -36,7 +40,6 @@ import zaika from './assets/img/dining/zaika.jpg';
 
 // Other Images
 import aboutBg from './assets/img/lawn.JPG';
-// import reception1 from './assets/img/about.jpg';
 
 export const roomImages = {
   classic: {
@@ -88,9 +91,14 @@ export const LawnImages = {
   aboutBg
 };
 
-// Combined export
+export const galleryImages = {
+  hotel: [hotelImg1, hotelImg2],
+};
+
+
 export const allImages = {
   rooms: roomImages,
   dining: diningImages,
-  lawn: LawnImages
+  lawn: LawnImages,
+  gallery: galleryImages
 };
