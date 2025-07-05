@@ -23,7 +23,7 @@ const MainNavbar = () => {
 
   const navItems = [
     { id: 'home', label: 'Home', path: '/' },
-    { id: 'gallery', label: 'Gallery', path: '/gallery' },
+    { id: 'gallery', label: 'Gallery', path: '#' },
     { id: 'room', label: 'Rooms', path: '/room' },
     { id: 'dining', label: 'Dining', path: '/dining' },
     { id: 'corportae', label: 'Corporate', path: '/corporate'},

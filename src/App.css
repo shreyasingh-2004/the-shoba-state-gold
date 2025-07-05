@@ -1884,4 +1884,148 @@ footer .border-top {
 }
 
 
-/*  ==================== GALLERY ============================  */
+/*  ==================== Contact us ============================  */
+.contact-hero {
+  background: url('./assets/img/about.jpg') center/cover no-repeat;
+  height: 115vh;
+
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 20px;
+}
+.contact-card {
+  background-color: #797979;
+  color: wheat;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transition: all 0.4s ease;
+  height: 100%;
+}
+
+.contact-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+.contact-card .icon {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.contact-card h5 {
+  font-weight: bold;
+}
+
+.contact-card p,
+.contact-card a {
+  color: #333;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.contact-card a:hover {
+  color: #e0e0e0;
+}
+
+.bounce {
+  animation: bounceIn 2s ease;
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+/* Gold color class */
+.text-gold {
+  color:white;
+}
+
+/* Button with animation */
+.btn-gold {
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-gold:hover {
+  background-color: #806424;
+  transform: scale(1.01);
+  box-shadow: 0 8px 20px rgba(241, 253, 135, 0.2);
+}
+
+/* Input fields with smooth focus and hover */
+.form-box input,
+.form-box textarea {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  box-shadow: none;
+}
+
+.form-box input:focus,
+.form-box textarea:focus {
+  border-color: #9c7b2f;
+  box-shadow: 0 0 0 3px rgba(156, 123, 47, 0.2);
+  outline: none;
+}
+
+/* Form box animation */
+.form-box {
+  animation: fadeSlideIn 1s ease forwards;
+  opacity: 0;
+  background-color: #797979;
+  transform: translateY(20px);
+}
+
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Map zoom hover */
+.map-wrapper {
+  overflow: hidden;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.map-wrapper:hover {
+  transform: scale(1.01);
+}
+
+/* Animate iframe zoom slightly */
+.map-wrapper iframe {
+  transition: transform 0.6s ease;
+  transform-origin: center;
+}
+
+.map-wrapper:hover iframe {
+  transform: scale(1.03);
+}
