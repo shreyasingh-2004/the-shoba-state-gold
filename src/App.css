@@ -1976,7 +1976,7 @@ footer .border-top {
   border-color: #b9982e !important;
 }
 
-/*  ==================== Contact us ============================  */
+/*  ===================== Contact us ============================  */
 .contact-hero {
   background: url('./assets/img/about.jpg') center/cover no-repeat;
   height: 105vh;
@@ -1984,6 +1984,7 @@ footer .border-top {
   align-items: center;
   position: relative;
   padding: 20px;
+  /* background-color:#080807; */
 }
 
 .contact-card {
