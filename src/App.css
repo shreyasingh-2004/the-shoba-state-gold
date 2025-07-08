@@ -1190,7 +1190,6 @@ footer .border-top {
   flex: 1;
 }
 
-.mobile-book-now-btn {
 
 .mobile-book-now-btn {
   display: none;
@@ -1325,8 +1324,6 @@ footer .border-top {
   }
 
   .mobile-book-now-btn {
-
-  .mobile-book-now-btn {
     width: 95% !important;
   }
 }
@@ -1349,8 +1346,6 @@ footer .border-top {
   padding-top: 30px;
   overflow-x: hidden;
 }
-
-.top-banner-container {
 .top-banner-container {
   height: 90vh;
   background-size: cover;
@@ -1592,8 +1587,6 @@ footer .border-top {
 
 .reserve-btn,
 .menu-btn {
-.reserve-btn,
-.menu-btn {
   padding: 15px 30px;
   border-radius: 8px;
   font-size: 18px;
@@ -1711,9 +1704,6 @@ footer .border-top {
 
   .reserve-btn,
   .menu-btn {
-
-  .reserve-btn,
-  .menu-btn {
     width: 100%;
     text-align: center;
   }
@@ -1743,9 +1733,6 @@ footer .border-top {
   .opening-hours {
     font-size: 16px;
   }
-
-  .reserve-btn,
-  .menu-btn {
 
   .reserve-btn,
   .menu-btn {
@@ -1875,7 +1862,6 @@ footer .border-top {
 /* Responsive Tweaks */
 @media (max-width: 991px) {
   .form-wrapper .row>div {
-  .form-wrapper .row>div {
     flex: 0 0 100%;
     max-width: 100%;
   }
@@ -1893,8 +1879,6 @@ footer .border-top {
     padding-bottom: 40px;
   }
 }
-
-.btn btn-dark {
 
 .btn btn-dark {
   width: 50%;
@@ -1995,7 +1979,7 @@ footer .border-top {
 /*  ==================== Contact us ============================  */
 .contact-hero {
   background: url('./assets/img/about.jpg') center/cover no-repeat;
-  height: 115vh;
+  height: 105vh;
   display: flex;
   align-items: center;
   position: relative;
