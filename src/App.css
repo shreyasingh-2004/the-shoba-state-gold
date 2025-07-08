@@ -1191,6 +1191,8 @@ footer .border-top {
 }
 
 .mobile-book-now-btn {
+
+.mobile-book-now-btn {
   display: none;
   visibility: hidden;
 }
@@ -1206,6 +1208,7 @@ footer .border-top {
   }
 
 }
+
 
 @media (max-width:991px) {
   .mobile-book-now-btn {
@@ -1322,6 +1325,8 @@ footer .border-top {
   }
 
   .mobile-book-now-btn {
+
+  .mobile-book-now-btn {
     width: 95% !important;
   }
 }
@@ -1346,6 +1351,7 @@ footer .border-top {
 }
 
 .top-banner-container {
+.top-banner-container {
   height: 90vh;
   background-size: cover;
   background-position: center;
@@ -1353,6 +1359,7 @@ footer .border-top {
   position: relative;
   overflow: hidden;
 }
+
 
 .banner-image {
   position: absolute;
@@ -1365,6 +1372,7 @@ footer .border-top {
   background-repeat: no-repeat;
   transition: opacity 500ms ease-in-out;
 }
+
 
 .banner-image.active {
   opacity: 1;
@@ -1425,6 +1433,7 @@ footer .border-top {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
 }
 
@@ -1479,6 +1488,7 @@ footer .border-top {
     transform: translateY(-15px);
   }
 
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -1517,6 +1527,7 @@ footer .border-top {
   object-fit: cover;
   transition: transform 0.5s ease;
 }
+
 
 .image-wrapper:hover img {
   transform: scale(1.03);
@@ -1581,6 +1592,8 @@ footer .border-top {
 
 .reserve-btn,
 .menu-btn {
+.reserve-btn,
+.menu-btn {
   padding: 15px 30px;
   border-radius: 8px;
   font-size: 18px;
@@ -1635,6 +1648,7 @@ footer .border-top {
     gap: 0;
   }
 
+
   .dining-name-item {
     display: inline-block;
     scroll-snap-align: center;
@@ -1649,6 +1663,7 @@ footer .border-top {
     transition: color 0.3s;
   }
 
+
   .dining-name-selector {
     display: flex;
     align-items: center;
@@ -1656,36 +1671,46 @@ footer .border-top {
     margin: 20px auto;
   }
 
+
   .dining-name-item.active {
     color: #d4af37;
   }
 
+
   .dining-card.with-image {
     flex-direction: column;
   }
+
 
   .image-wrapper {
     width: 100%;
     max-height: 250px;
   }
 
+
   .dining-card .text {
     padding: 20px;
   }
+
 
   .dining-title {
     font-size: 28px;
   }
 
+
   .dining-info-section {
     padding: 0 20px 20px 20px;
   }
+
 
   .dining-actions {
     flex-direction: column;
     align-items: center;
     gap: 15px;
   }
+
+  .reserve-btn,
+  .menu-btn {
 
   .reserve-btn,
   .menu-btn {
@@ -1699,21 +1724,28 @@ footer .border-top {
     height: 40vh;
   }
 
+
   .image-wrapper {
     height: 200px;
   }
+
 
   .dining-title {
     font-size: 24px;
   }
 
+
   .dining-card p {
     font-size: 1rem;
   }
 
+
   .opening-hours {
     font-size: 16px;
   }
+
+  .reserve-btn,
+  .menu-btn {
 
   .reserve-btn,
   .menu-btn {
@@ -1843,6 +1875,7 @@ footer .border-top {
 /* Responsive Tweaks */
 @media (max-width: 991px) {
   .form-wrapper .row>div {
+  .form-wrapper .row>div {
     flex: 0 0 100%;
     max-width: 100%;
   }
@@ -1862,8 +1895,11 @@ footer .border-top {
 }
 
 .btn btn-dark {
+
+.btn btn-dark {
   width: 50%;
 }
+
 
 @media (max-width: 768px) {
   .booking-hero {
@@ -1902,6 +1938,7 @@ footer .border-top {
 
 /*  ==================== GALLERY ============================  */
 .photo-gallery-container {
+  padding-top: 90px;
   padding-top: 90px;
   padding-bottom: 60px;
 }
@@ -1958,7 +1995,7 @@ footer .border-top {
 /*  ==================== Contact us ============================  */
 .contact-hero {
   background: url('./assets/img/about.jpg') center/cover no-repeat;
-  height: 105vh;
+  height: 115vh;
   display: flex;
   align-items: center;
   position: relative;
