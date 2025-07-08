@@ -10,7 +10,7 @@ const AboutUs = () => {
             <div className="about-container">
                 <div className="about-content">
                     <h2 className="section-subtitle">Our Story</h2>
-                    <h3 className="section-title">Welcome to Luxe Haven</h3>
+                    <h3 className="section-title">Welcome to Luxery Haven</h3>
                     <div className="divider"></div>
 
                     <div className="about-text">

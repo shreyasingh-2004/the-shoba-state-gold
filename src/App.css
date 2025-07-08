@@ -1189,7 +1189,8 @@ footer .border-top {
 .room-card li .label {
   flex: 1;
 }
-.mobile-book-now-btn{
+
+.mobile-book-now-btn {
   display: none;
   visibility: hidden;
 }
@@ -1205,6 +1206,7 @@ footer .border-top {
   }
 
 }
+
 @media (max-width:991px) {
   .mobile-book-now-btn {
     display: block;
@@ -1318,7 +1320,8 @@ footer .border-top {
     padding: 0 20px 20px 20px;
     gap: 40px;
   }
-  .mobile-book-now-btn{
+
+  .mobile-book-now-btn {
     width: 95% !important;
   }
 }
@@ -1342,7 +1345,7 @@ footer .border-top {
   overflow-x: hidden;
 }
 
-.top-banner-container{
+.top-banner-container {
   height: 90vh;
   background-size: cover;
   background-position: center;
@@ -1350,6 +1353,7 @@ footer .border-top {
   position: relative;
   overflow: hidden;
 }
+
 .banner-image {
   position: absolute;
   top: 0;
@@ -1361,6 +1365,7 @@ footer .border-top {
   background-repeat: no-repeat;
   transition: opacity 500ms ease-in-out;
 }
+
 .banner-image.active {
   opacity: 1;
   z-index: 1;
@@ -1419,7 +1424,7 @@ footer .border-top {
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch; 
+  -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
 }
 
@@ -1473,6 +1478,7 @@ footer .border-top {
     opacity: 0;
     transform: translateY(-15px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -1511,6 +1517,7 @@ footer .border-top {
   object-fit: cover;
   transition: transform 0.5s ease;
 }
+
 .image-wrapper:hover img {
   transform: scale(1.03);
 }
@@ -1572,7 +1579,8 @@ footer .border-top {
   padding: 0 20px;
 }
 
-.reserve-btn, .menu-btn {
+.reserve-btn,
+.menu-btn {
   padding: 15px 30px;
   border-radius: 8px;
   font-size: 18px;
@@ -1626,6 +1634,7 @@ footer .border-top {
     padding: 0 10px;
     gap: 0;
   }
+
   .dining-name-item {
     display: inline-block;
     scroll-snap-align: center;
@@ -1639,44 +1648,47 @@ footer .border-top {
     color: #444;
     transition: color 0.3s;
   }
+
   .dining-name-selector {
     display: flex;
     align-items: center;
     width: 95%;
     margin: 20px auto;
   }
+
   .dining-name-item.active {
     color: #d4af37;
   }
-  
+
   .dining-card.with-image {
     flex-direction: column;
   }
-  
+
   .image-wrapper {
     width: 100%;
     max-height: 250px;
   }
-  
+
   .dining-card .text {
     padding: 20px;
   }
-  
+
   .dining-title {
     font-size: 28px;
   }
-  
+
   .dining-info-section {
     padding: 0 20px 20px 20px;
   }
-  
+
   .dining-actions {
     flex-direction: column;
     align-items: center;
     gap: 15px;
   }
-  
-  .reserve-btn, .menu-btn {
+
+  .reserve-btn,
+  .menu-btn {
     width: 100%;
     text-align: center;
   }
@@ -1686,23 +1698,25 @@ footer .border-top {
   .top-banner {
     height: 40vh;
   }
-  
+
   .image-wrapper {
     height: 200px;
   }
-  
+
   .dining-title {
     font-size: 24px;
   }
-  
+
   .dining-card p {
     font-size: 1rem;
   }
-  
+
   .opening-hours {
     font-size: 16px;
   }
-  .reserve-btn, .menu-btn {
+
+  .reserve-btn,
+  .menu-btn {
     padding: 12px 20px;
     font-size: 16px;
   }
@@ -1828,7 +1842,7 @@ footer .border-top {
 
 /* Responsive Tweaks */
 @media (max-width: 991px) {
-  .form-wrapper .row > div {
+  .form-wrapper .row>div {
     flex: 0 0 100%;
     max-width: 100%;
   }
@@ -1846,9 +1860,11 @@ footer .border-top {
     padding-bottom: 40px;
   }
 }
-.btn btn-dark{
+
+.btn btn-dark {
   width: 50%;
 }
+
 @media (max-width: 768px) {
   .booking-hero {
     height: auto;
@@ -1886,7 +1902,7 @@ footer .border-top {
 
 /*  ==================== GALLERY ============================  */
 .photo-gallery-container {
-  padding-top: 90px; 
+  padding-top: 90px;
   padding-bottom: 60px;
 }
 
@@ -1937,4 +1953,156 @@ footer .border-top {
   background-color: #b9982e !important;
   color: white !important;
   border-color: #b9982e !important;
+}
+
+/*  ==================== Contact us ============================  */
+.contact-hero {
+  background: url('./assets/img/about.jpg') center/cover no-repeat;
+  height: 115vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 20px;
+}
+
+.contact-card {
+  /* background-color: #797979; */
+  color: #d4af37;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px #d4af377c;
+  transition: all 0.4s ease;
+  height: 100%;
+}
+
+.contact-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 8px 12px rgba(145, 145, 145, 0.418);
+}
+
+.contact-card .icon {
+  font-size: 2.5rem;
+  color: #d3d3d3;
+}
+
+.contact-card h5 {
+  font-weight: bold;
+}
+
+.contact-card p,
+.contact-card a {
+  color: #d3d3d3;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.contact-card a:hover {
+  color: #a8a8a8;
+}
+
+.bounce {
+  animation: bounceIn 2s ease;
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+
+  70% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+/* Gold color class */
+.text-gold {
+  color: #d3d3d3;
+}
+
+/* Button with animation */
+.btn-gold {
+  color: #d3d3d3;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-gold:hover {
+  background: #d4af37c5;
+  transform: scale(1.01);
+  box-shadow: 0 8px 20px rgba(241, 253, 135, 0.2);
+}
+
+/* Input fields with smooth focus and hover */
+.form-box input,
+.form-box textarea {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  box-shadow: none;
+}
+
+.form-box input:focus,
+.form-box textarea:focus {
+  border-color: #d4af37;
+  /* box-shadow: 0 0 0 3px rgba(156, 123, 47, 0.2); */
+  outline: none;
+}
+
+/* Form box animation */
+.form-box {
+  animation: fadeSlideIn 1s ease forwards;
+  opacity: 0;
+  border: 3px solid #d4af37;
+  border-radius: 20px !important;
+  /* background-color: #797979; */
+  transform: translateY(20px);
+}
+
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Map zoom hover */
+.map-wrapper {
+  overflow: hidden;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.map-wrapper:hover {
+  transform: scale(1.01);
+}
+
+/* Animate iframe zoom slightly */
+.map-wrapper iframe {
+  transition: transform 0.6s ease;
+  transform-origin: center;
+}
+
+.map-wrapper:hover iframe {
+  transform: scale(1.03);
 }

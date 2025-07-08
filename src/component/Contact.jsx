@@ -17,9 +17,9 @@ export default function Contact() {
             </div>
         </div>
 
-         <section className="py-5  contact-section" style={{background:"#0b0c10"}}>
+         <section className="py-5  contact-section">
       <div className="container text-center">
-        <h2 className="mb-5 fw-bold text-uppercase " style={{color:"wheat"}}>Contact Us</h2>
+        <h2 className="mb-5 fw-bold text-uppercase " style={{color:"#d4af37"}}>Contact Us</h2>
         <div className="row g-4">
           {/* Call */}
           <div className="col-md-6 col-lg-3">
@@ -81,7 +81,7 @@ export default function Contact() {
       </div>
       </section>
 
-       <section className="py-5 "  style={{background:"#0b0c10"}}>
+       <section className="py-5 ">
       <div className="container">
         <div className="row g-4 align-items-stretch">
           {/* Google Map */}
@@ -101,8 +101,8 @@ export default function Contact() {
 
           {/* Contact Form */}
           <div className="col-lg-6">
-            <div className="form-box shadow p-4 rounded h-100">
-              <h4 className="mb-4 text-center " style={{color:"wheat"}}>Contact Details</h4>
+            <div className="form-box p-4 h-100">
+              <h4 className="mb-4 text-center " style={{color:"#d4af37"}}>Contact Details</h4>
               <form>
                 <div className="mb-3">
                   <input
