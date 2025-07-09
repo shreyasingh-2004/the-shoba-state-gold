@@ -4,10 +4,16 @@ import { FaPhoneAlt } from 'react-icons/fa'
 import { MdOutlineMail } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
 import { FaEarthAmericas } from "react-icons/fa6";
+// import { Helmet } from 'react-helmet-async';
+
 
 export default function Contact() {
   return (
     <>
+      <title>Reach Out — We're Just Around the Corner from IGI Airport</title>
+      <meta name="description" content="Got a question or just need directions? You can call us — or message, whatever’s easy. We’re right near IGI Airport, and yes, we do free pick and drop. No forms, no waiting. Just reach out. Someone from the team will help you out quick. Whether you want to book, check in early, or just ask something small — it’s never a problem." />
+      <meta property="og:title" content="Reach Out — We're Just Around the Corner from IGI Airport"/>
+      <meta property="og:description" content="Got a question or just need directions? You can call us — or message, whatever’s easy. We’re right near IGI Airport, and yes, we do free pick and drop. No forms, no waiting. Just reach out. Someone from the team will help you out quick. Whether you want to book, check in early, or just ask something small — it’s never a problem." />
       <div className="contact-hero">
         <div className="overlay">
           <Container className="text-white text-center hero-text">

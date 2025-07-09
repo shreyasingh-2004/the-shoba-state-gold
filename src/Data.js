@@ -4,34 +4,34 @@ import hotelImg2 from './assets/img/gallery/Hotel-image.jpg';
 
 // Rooms Images
 import classicbg from './assets/img/rooms/classic.jpg';
-import classic1 from './assets/img/rooms/classic1.JPG';
-import classic2 from './assets/img/rooms/classic2.jpg';
+import classic1 from './assets/img/rooms/classic-room.JPG';
+import classic2 from './assets/img/rooms/classic_room.jpg';
 
-import executivebg from './assets/img/rooms/executive.jpg';
-import executive1 from './assets/img/rooms/executive1.jpg';
-import executive2 from './assets/img/rooms/executive2.jpg';
+// import executivebg from './assets/img/rooms/executive.jpg';
+// import executive1 from './assets/img/rooms/executive-room.jpg';
+// import executive2 from './assets/img/rooms/executive_room.jpg';
 
 import deluexbg from './assets/img/rooms/deluxe.jpg';
-import deluex1 from './assets/img/rooms/deluxe1.jpg';
-import deluxe2 from './assets/img/rooms/deluxe2.jpg';
+import deluex1 from './assets/img/rooms/deluxe-room.jpg';
+import deluxe2 from './assets/img/rooms/deluxe_room.jpg';
 
 import superdeluxebg from './assets/img/rooms/super-deluxe.jpg';
-import superdeluxe1 from './assets/img/rooms/superdeluxe1.jpg';
-import superdeluxe2 from './assets/img/rooms/superdeluxe2.jpg';
+import superdeluxe1 from './assets/img/rooms/superdeluxe-room.jpg';
+import superdeluxe2 from './assets/img/rooms/superdeluxe_room.jpg';
 
 import suitebg from './assets/img/rooms/suite.jpg';
-import suite1 from './assets/img/rooms/suite1.jpg';
-import suite2 from './assets/img/rooms/suite2.jpg';
+import suite1 from './assets/img/rooms/suite-room.jpg';
+import suite2 from './assets/img/rooms/suite_room.jpg';
 
-import familysuitebg from './assets/img/rooms/family-suite.jpg';
-import familysuite1 from './assets/img/rooms/familt-suite1.jpg';
-import familysuite2 from './assets/img/rooms/familt-suite2.jpg';
+// import familysuitebg from './assets/img/rooms/family-suite.jpg';
+// import familysuite1 from './assets/img/rooms/family-suite-room.jpg';
+// import familysuite2 from './assets/img/rooms/family-suite_room.jpg';
 
 // Dining Images
-import aerostagBg from './assets/img/dining/aero-stag.JPG';
-import safarBg from './assets/img/dining/safar1.jpg';
-import udaanBg from './assets/img/dining/udaan1.jpg';
-import zaikaBg from './assets/img/dining/zaika1.jpg';
+import aerostagBg from './assets/img/dining/aero_stag.jpg';
+import safarBg from './assets/img/dining/safar-dine.jpg';
+import udaanBg from './assets/img/dining/udaan-dine.jpg';
+import zaikaBg from './assets/img/dining/zaika-dine.jpg';
 
 import aerostag from './assets/img/dining/aero-stag.JPG';
 import safar from './assets/img/dining/safar.jpg';
@@ -43,56 +43,77 @@ import aboutBg from './assets/img/lawn.JPG';
 
 export const roomImages = {
   classic: {
-    bg: classicbg,
-    images: [classic1, classic2]
+    bg: { src: classicbg, alt: 'Classic room' },
+    images: [
+      { src: classic1, alt: 'Classic room' },
+      { src: classic2, alt: 'Classic room' }
+    ]
   },
-  executive: {
-    bg: executivebg,
-    images: [executive1, executive2]
-  },
+  // executive: {
+  //   bg: { src: executivebg, alt: 'Executive room' },
+  //   images: [
+  //     { src: executive1, alt: 'Executive room' },
+  //     { src: executive2, alt: 'Executive room ' }
+  //   ]
+  // },
   deluxe: {
-    bg: deluexbg,
-    images: [deluex1, deluxe2]
+    bg: { src: deluexbg, alt: 'Deluxe room' },
+    images: [
+      { src: deluex1, alt: 'Deluxe room' },
+      { src: deluxe2, alt: 'Deluxe room' }
+    ]
   },
   superDeluxe: {
-    bg: superdeluxebg,
-    images: [superdeluxe1, superdeluxe2]
+    bg: { src: superdeluxebg, alt: 'Super Deluxe room' },
+    images: [
+      { src: superdeluxe1, alt: 'Super Deluxe room' },
+      { src: superdeluxe2, alt: 'Super Deluxe room' }
+    ]
   },
   suite: {
-    bg: suitebg,
-    images: [suite1, suite2]
+    bg: { src: suitebg, alt: 'Suite room' },
+    images: [
+      { src: suite1, alt: 'Suite room' },
+      { src: suite2, alt: 'Suite room' }
+    ]
   },
-  familySuite: {
-    bg: familysuitebg,
-    images: [familysuite1, familysuite2]
-  }
+  // familySuite: {
+  //   bg: { src: familysuitebg, alt: 'Family Suite room background' },
+  //   images: [
+  //     { src: familysuite1, alt: 'Family Suite room' },
+  //     { src: familysuite2, alt: 'Family Suite room' }
+  //   ]
+  // }
 };
 
 export const diningImages = {
   aerostag: {
-    bg: aerostagBg,
-    main: aerostag
+    bg: { src: aerostagBg, alt: 'Aero Stag dining' },
+    main: { src: aerostag, alt: 'Aero Stag dining' }
   },
   safar: {
-    bg: safarBg,
-    main: safar
+    bg: { src: safarBg, alt: 'Safar dining' },
+    main: { src: safar, alt: 'Safar dining' }
   },
   udaan: {
-    bg: udaanBg,
-    main: udaan
+    bg: { src: udaanBg, alt: 'Udaan dining' },
+    main: { src: udaan, alt: 'Udaan dining' }
   },
   zaika: {
-    bg: zaikaBg,
-    main: zaika
+    bg: { src: zaikaBg, alt: 'Zaika dining' },
+    main: { src: zaika, alt: 'Zaika dining' }
   }
 };
 
 export const LawnImages = {
-  aboutBg
+  aboutBg: { src: aboutBg, alt: 'Hotel lawn area' }
 };
 
 export const galleryImages = {
-  hotel: [hotelImg1, hotelImg2],
+  hotel: [
+    { src: hotelImg1, alt: 'Front view of the hotel' },
+    { src: hotelImg2, alt: 'Hotel view' }
+  ]
 };
 
 
