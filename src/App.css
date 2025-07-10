@@ -620,7 +620,6 @@ video {
   padding: 2rem 0;
   text-align: center;
   background: #0b0c10;
-  max-width: 1800px;
 }
 
 .title h2 {
@@ -910,6 +909,12 @@ footer input.form-control {
   border-radius: 0;
   font-size: 15px;
 }
+.footer-contact-group {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 1rem; */
+}
+
 
 footer input.form-control::placeholder {
   color: #ccc;
@@ -954,6 +959,9 @@ footer .border-top {
 
   footer .ratio {
     margin-top: 1rem;
+  }
+  .footer-contact-group {
+    flex-direction: column;
   }
 }
 

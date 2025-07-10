@@ -44,8 +44,9 @@ const MainNavbar = () => {
 
           <Button
             as={Link}
-            to="/room"
+            to="https://www.vhotelthegrandshoba.com/related-room"
             className="book-now-btn-mobile d-lg-none me-2"
+            target="_blank" rel="noopener noreferrer"
             variant="primary"
           >
             BOOK NOW
@@ -80,7 +81,8 @@ const MainNavbar = () => {
               ))}
               <Button
                 as={Link}
-                to="/room"
+                to="https://www.vhotelthegrandshoba.com/related-room"
+                target="_blank"rel="noopener noreferrer"
                 className="book-now-btn ms-lg-3 mt-3 mt-lg-0"
                 variant="primary"
               >
@@ -107,7 +109,8 @@ const MainNavbar = () => {
           ))}
           <Button
             as={Link}
-            to="/booking"
+            to="https://www.vhotelthegrandshoba.com/related-room"
+            target="_blank"rel="noopener noreferrer"
             className="book-now-btn mt-3"
             variant="primary"
             onClick={() => setExpanded(false)}

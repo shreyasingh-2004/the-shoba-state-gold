@@ -6,25 +6,25 @@ const dine = [
   {
     name: 'AERO-STAG',
     type: 'Aero Stag offers a unique dining experience with both elegant indoor seating and breezy poolside ambiance.',
-    link: '/aero-stag-booking',
+    link: '/dining',
     imageKey: 'aerostag',
   },
   {
     name: 'SAFAR',
-    type: 'A Safar is our signature indoor restaurant serving a delightful blend of traditional and modern cuisine.',
-    link: '/safar-booking',
+    type: 'A Safar is our signature outdoor restaurant serving a delightful blend of traditional and modern cuisine.',
+    link: '/dining',
     imageKey: 'safar',
   },
   {
     name: 'UDAAN',
     type: 'Just like flights soaring high, Udaan lifts your dining experience with delicious food and a welcoming ambiance.',
-    link: '/udaan-booking',
+    link: '/dining',
     imageKey: 'udaan',
   },
   {
     name: 'ZAIKA',
     type: 'Our skilled chefs craft each dish using time-honoured recipes and authentic spices, delivering a true culinary experience.',
-    link: '/zaika-booking',
+    link: '/dining',
     imageKey: 'zaika',
   },
 ];

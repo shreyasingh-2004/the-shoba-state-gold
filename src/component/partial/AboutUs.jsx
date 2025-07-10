@@ -10,19 +10,18 @@ const AboutUs = () => {
             <div className="about-container">
                 <div className="about-content">
                     <h2 className="section-subtitle">Our Story</h2>
-                    <h3 className="section-title">Welcome to Luxery Haven</h3>
+                    <h3 className="section-title">Welcome to Luxery Hotel</h3>
                     <div className="divider"></div>
 
                     <div className="about-text">
                         <p>
-                        The Shoba State Gold is a renowned business-class hotel made to serve the new professional
-                         and discerning traveler. It presents an unparalleled combination of cutting-edge design, 
-                         careful amenities, and genuine hospitality in a serene, well-placed setting.
+                        Located just minutes from Indira Gandhi International Airport near Terminals 2 and 3. V Hotel The Grand Shoba in Mahipalpur and Vasant Kunj offers ideal convenience for international, domestic, and connecting flight travelers.
+                        Our luxury hotel features 100 elegant rooms and suites with modern amenities, perfect for business and leisure stays.
                         </p>
                         <p>
-                        With tastefully appointed rooms, rapid connectivity, fully serviced meeting areas, and attentive
-                         service, it creates a foundation for successful stays and upscale comfort. For pleasure or business, 
-                         The Shoba State Gold offers a hassle-free experience characterized by comfort, ease, and uncompromised quality.
+                        Dine at our signature restaurants—Safar, Zaika, Aerostag, and Udaan—serving global and Indian cuisine curated by expert chefs.
+                        Host unforgettable weddings, meetings, or events in our banquet and conference halls near IGI Airport. Relax by the infinity pool or unwind at our wellness club. With exceptional service and comfort, your stay is designed to be both memorable and seamless.
+                        A Grand Icon of Indian Hospitality
                         </p>
                     </div>
                 </div>

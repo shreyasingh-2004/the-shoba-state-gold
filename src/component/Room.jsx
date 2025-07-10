@@ -77,17 +77,19 @@ const Room = () => {
 
   return (
     <>
-        <title>Rooms Close to IGI Airport – Nothing Fancy, Just Right</title>
-        <meta name="description" content="If you’re flying in or out of Delhi, this place makes things easy. Rooms are clean, quiet, and you get a decent bed. Not trying to impress, just a good spot to sleep and breathe for a bit. After a long trip or before an early flight, that’s all you really need, right?" />
-        <meta property="og:title" content="Rooms Close to IGI Airport – Nothing Fancy, Just Right" />
-        <meta property="og:description" content="If you’re flying in or out of Delhi, this place makes things easy. Rooms are clean, quiet, and you get a decent bed. Not trying to impress, just a good spot to sleep and breathe for a bit. After a long trip or before an early flight, that’s all you really need, right?" />
+      <title>Rooms Close to IGI Airport – Nothing Fancy, Just Right</title>
+      <meta name="description" content="If you’re flying in or out of Delhi, this place makes things easy. Rooms are clean, quiet, and you get a decent bed. Not trying to impress, just a good spot to sleep and breathe for a bit. After a long trip or before an early flight, that’s all you really need, right?" />
+      <meta property="og:title" content="Rooms Close to IGI Airport – Nothing Fancy, Just Right" />
+      <meta property="og:description" content="If you’re flying in or out of Delhi, this place makes things easy. Rooms are clean, quiet, and you get a decent bed. Not trying to impress, just a good spot to sleep and breathe for a bit. After a long trip or before an early flight, that’s all you really need, right?" />
       <div className="rooms-page">
         <div
           className="top-banner"
           style={{ backgroundImage: `url(${roomsData[selectedIndex].bgImage.src})` }}
           aria-label={roomsData[selectedIndex].bgImage.alt}
         >
-          <a href="/booking" className="book-now-btn">Book Now</a>
+          <a href="https://www.vhotelthegrandshoba.com/related-room" className="book-now-btn" target="_blank"rel="noopener noreferrer">
+          Book Now
+          </a>
         </div>
 
         <div className="room-name-selector">
@@ -151,7 +153,7 @@ const Room = () => {
           </div>
         </div>
 
-        <a href="/booking" className="mobile-book-now-btn">Book Now</a>
+        <a href="https://www.vhotelthegrandshoba.com/related-room" className="mobile-book-now-btn" target="_blank"rel="noopener noreferrer">Book Now</a>
 
         <Testimonial />
       </div>

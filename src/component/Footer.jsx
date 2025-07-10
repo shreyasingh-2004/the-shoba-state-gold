@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FaFacebookF, FaInstagram, FaTwitter, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaYoutube } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -11,12 +11,12 @@ export default function Footer() {
           <div className="col-md-4 mb-4">
             <h5>About Us</h5>
             <p>
-            Live the experience of timeless luxury and gracious hospitality at our stunning hotels and banquets, where luxury is matched with comfort to create unforgettable moments, celebrations, events, and treasured memories that last a lifetime with unparalleled service.
+              Experience the essence of ageless luxury and warm hospitality at our beautiful hotels and banquets, where comfort is combined with luxury to build lasting moments, celebrations, events, and precious memories that last an eternity with matchless service.
             </p>
             <div className="d-flex footer-social mt-3">
-              <a href="https://facebook.com" className="social-icon"><FaFacebookF /></a>
-              <a href="https://instagram.com" className="social-icon"><FaInstagram /></a>
-              <a href="https://x.com/Anupkhanna9971" className="social-icon"><FaTwitter /></a>
+              <a href="https://www.facebook.com/people/Vhotel-The-Grand-Shoba/61576868909506/?rdid=zf8iSXaAYZXlWgng&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16iPHYr1yE%2F" className="social-icon" target="_blank"rel="noopener noreferrer"><FaFacebookF /></a>
+              <a href="https://www.instagram.com/vhotelthegrandshoba/?igsh=MTZjc3Bxb25ndWFqcw%3D%3D#" className="social-icon" target="_blank"rel="noopener noreferrer"><FaInstagram /></a>
+              <a href="https://www.youtube.com/watch?v=UixEVGN09YU" className="social-icon" target="_blank"rel="noopener noreferrer"><FaYoutube /></a>
             </div>
           </div>
 
@@ -26,7 +26,7 @@ export default function Footer() {
             <Link to="/" className="footer-link">Home</Link>
             <Link to="/about" className="footer-link">About Us</Link>
             <Link to="/rooms" className="footer-link">Rooms</Link>
-            <Link to="dining" className="footer-link">Dining</Link>
+            <Link to="/dining" className="footer-link">Dining</Link>
             <Link to="/contact" className="footer-link">Contact</Link>
           </div>
 
@@ -53,21 +53,31 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="footer-link mb-0"
                 >
-                  FIRST FLOOR, PREHLAD MARKET, B-4, Block 52, Karol Bagh, New Delhi, Delhi, 110005
+                  1031, Mahipalpur , Vasant kunj Bypass, Road, Mahipalpur Extension, New Delhi
                 </a>
               </li>
-              <li className="d-flex align-items-center mb-2">
-                <FaPhoneAlt style={{ color: '#d4af37', marginRight: '10px' }} />
-                <a href="tel:+919971522879" className="footer-link mb-0">
-                  +91 9971522879
-                </a>
+              {/* Phone */}
+              <li className="d-flex align-items-start mb-2">
+                <div className="me-2" style={{ marginTop: '3px' }}>
+                  <FaPhoneAlt style={{ color: '#d4af37' }} />
+                </div>
+                <div className="footer-contact-group gap-3">
+                  <a href="tel:+919811320209" className="footer-link mb-0">+91 9811320209</a>
+                  <a href="tel:+919811226576" className="footer-link mb-0">+91 9811226576</a>
+                </div>
               </li>
-              <li className="d-flex align-items-center">
-                <FaEnvelope style={{ color: '#d4af37', marginRight: '10px' }} />
-                <a href="mailto:info@perfectconsultancy.co" className="footer-link mb-0">
-                info@perfectconsultancy.co
-                </a>
+
+              {/* Email */}
+              <li className="d-flex align-items-start">
+                <div className="me-2" style={{ marginTop: '3px' }}>
+                  <FaEnvelope style={{ color: '#d4af37' }} />
+                </div>
+                <div className="footer-contact-group">
+                  <a href="mailto:info@vhotelthegrandshoba.com" className="footer-link mb-0" target="_blank"rel="noopener noreferrer">info@vhotelthegrandshoba.com</a>
+                  <a href="mailto:booking@vhotelthegrandshoba.com" className="footer-link mb-0" target="_blank"rel="noopener noreferrer">booking@vhotelthegrandshoba.com</a>
+                </div>
               </li>
+
             </ul>
           </div>
 

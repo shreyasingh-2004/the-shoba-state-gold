@@ -217,10 +217,10 @@ const Dining = () => {
         </div>
 
         <div className="dining-actions">
-          <a href="/reservations" className="reserve-btn">
+          <a href="https://www.vhotelthegrandshoba.com/query" className="reserve-btn" target="_blank"rel="noopener noreferrer">
             Reserve a Table
           </a>
-          <a href="/menu" className="menu-btn">
+          <a href="https://www.vhotelthegrandshoba.com/menu" className="menu-btn"target="_blank"rel="noopener noreferrer">
             View Menu
           </a>
         </div>
