@@ -8,7 +8,6 @@ const Booking = () => {
         adults: 1,
         children: 0,
     });
-
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
